@@ -199,7 +199,7 @@ var s, FrequencyViz = {
 			var xPos = parseFloat(d3.select(this).attr('x'));
 			var yPos = parseFloat(d3.select(this).attr('y')) + yScale.rangeBand() / 2;
 
-			d3.select('#tooltip').style('left', xPos + 70 + 'px').style('top', yPos + 75 + 'px').select('#value').text(d.x);
+			d3.select('#tooltip').style('left', xPos + 70 + 'px').style('top', yPos + 95 + 'px').select('#value').text(d.x);
 
 			d3.select('#tooltip').classed('hidden', false);
 		}).on('mouseout', function() {
